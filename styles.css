@@ -230,6 +230,20 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.hero-location svg {
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
 .hero-description {
   font-size: 1.05rem;
   color: var(--text-muted);
@@ -465,6 +479,14 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.project-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: -0.5rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
 .project-description {
   font-size: 0.925rem;
   color: var(--text-secondary);
@@ -547,8 +569,12 @@ img {
   height: 14px;
   border-radius: 50%;
   background: var(--gradient);
-  border: 3px solid var(--bg-secondary);
+  border: 3px solid var(--bg-primary);
   box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+.section-alt .timeline-marker {
+  border-color: var(--bg-secondary);
 }
 
 .timeline-date {
@@ -568,6 +594,28 @@ img {
 .timeline-institution {
   font-size: 0.925rem;
   color: var(--text-secondary);
+}
+
+.timeline-details {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-details li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.timeline-details li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-light);
 }
 
 /* ===== Achievements ===== */
